@@ -76,5 +76,10 @@ namespace PDSA_2_CW
             //e.Graphics.DrawImage(Images.water, 212, 346);
             //e.Graphics.DrawImage(Images.water, 260, 370);
         }
+
+        private void Shortest_Path_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
