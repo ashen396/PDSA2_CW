@@ -112,11 +112,11 @@ namespace PDSA_2_Course_Work
             //                 $"Jump Search Index:{jumpSearchIndex}{Environment.NewLine}" +
             //                 $"Exponentail Search Index: {exponentialSearchIndex}{Environment.NewLine}";
 
-            txt_time.Text = $"Binary Time Taken: {BinarySearchTime.TotalMilliseconds} ms";
+            txt_time.Text = $"{BinarySearchTime.TotalMilliseconds} ms";
 
-            txt_jumpTime.Text = $"Jump Time Taken: {jumpSearchTime.TotalMilliseconds} ms";
+            txt_jumpTime.Text = $"{jumpSearchTime.TotalMilliseconds} ms";
 
-            txt_expoTine.Text = $"Exponential Time Taken: {exponentialSearchTime.TotalMilliseconds} ms";
+            txt_expoTine.Text = $"{exponentialSearchTime.TotalMilliseconds} ms";
 
         }
 
@@ -282,9 +282,29 @@ namespace PDSA_2_Course_Work
             }
             else
             {
-                MessageBox.Show($"Sorry, your prediction is incorrect. The correct index is {predictedIndex}.", "Prediction Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Sorry, your prediction is incorrect. Try again", "Prediction Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txt_number.Clear();
+            txt_index1.Clear();
+            txt_index2.Clear();
+            txt_index3.Clear();
+            txt_index4.Clear();
+            txt_userPrediction.Clear();
+            txt_name.Clear();
+            txt_time.Clear();
+            txt_jumpTime.Clear();
+            txt_expoTine.Clear();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void RecordPredictionResult(string userName, TimeSpan BinarySearchTime, TimeSpan jumpSearchTime, TimeSpan exponentialSearchTime)
         {
             string query = "INSERT INTO Results (UserName, BinarySearchTime, JumpSearchTime, ExponentialSearchTime) " +
