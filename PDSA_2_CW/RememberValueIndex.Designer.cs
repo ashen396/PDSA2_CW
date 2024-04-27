@@ -107,12 +107,12 @@
             this.number.AutoSize = true;
             this.number.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.number.ForeColor = System.Drawing.Color.Red;
-            this.number.Location = new System.Drawing.Point(331, 167);
+            this.number.Location = new System.Drawing.Point(275, 173);
             this.number.Name = "number";
             this.number.Size = new System.Drawing.Size(251, 25);
             this.number.TabIndex = 22;
             this.number.Text = "Press Generate numbers";
-            this.number.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.number.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button2
             // 
@@ -140,7 +140,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 559);
+            this.ClientSize = new System.Drawing.Size(1034, 559);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox3);

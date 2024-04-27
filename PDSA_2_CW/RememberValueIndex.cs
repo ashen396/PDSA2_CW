@@ -43,7 +43,7 @@ namespace PDSA_2_CW
             BubbleSort(numbersArray);
             InsertionSort(numbersArray);
             MergeSort(numbersArray);
-            TimSort(numbersArray);
+            //TimSort(numbersArray);
             RadixSort(numbersArray);
             ShellSort(numbersArray);
             QuickSort(numbersArray, 0, numbersArray.Length - 1);
@@ -479,7 +479,8 @@ namespace PDSA_2_CW
             this.Hide();
         }
 
-
+       
+       
         // DB connection
         private void InsertTimeTaken(string sortMethod, double timeTaken)
         {
