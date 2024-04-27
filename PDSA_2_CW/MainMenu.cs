@@ -45,7 +45,9 @@ namespace PDSA_2_CW
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            PredictValueIndex predictValueIndex = new PredictValueIndex();
+            predictValueIndex.Show();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)

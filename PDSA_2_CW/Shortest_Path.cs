@@ -331,5 +331,20 @@ namespace PDSA_2_CW
         {
            
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            MainMenu mm = new MainMenu();
+            mm.Show();
+            this.Hide();
+        }
+
+        private void btnMainMenu_Click(object sender, EventArgs e)
+        {
+            MainMenu mm = new MainMenu();
+            mm.Show();
+            this.Hide();
+
+        }
     }
 }

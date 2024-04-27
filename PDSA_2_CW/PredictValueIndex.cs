@@ -9,12 +9,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static PDSA_2_Course_Work.Form1;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+//using static PDSA_2_Course_Work.PredictValueIndex;
+//using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
-namespace PDSA_2_Course_Work
+namespace PDSA_2_CW
 {
-    public partial class Form1 : Form
+    public partial class PredictValueIndex : Form
     {
         Random random = new Random();
         int[] randomArray;
@@ -25,7 +25,7 @@ namespace PDSA_2_Course_Work
 
         //connectionString = "Data Source=KAVINDU;Initial Catalog=PredictTheValue;Integrated Security=True;Encrypt=True;";
 
-        public Form1()
+        public PredictValueIndex()
         {
             InitializeComponent();
             bst = new BinarySearchTree();
@@ -303,6 +303,14 @@ namespace PDSA_2_Course_Work
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MainMenu mm = new MainMenu();
+
+            mm.Show();
+            this.Hide();
         }
 
         private void RecordPredictionResult(string userName, TimeSpan BinarySearchTime, TimeSpan jumpSearchTime, TimeSpan exponentialSearchTime)
